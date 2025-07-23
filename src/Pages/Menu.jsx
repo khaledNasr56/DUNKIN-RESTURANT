@@ -1,4 +1,3 @@
-"use client"
 import { useState, useEffect } from "react"
 import img1 from '../assets/menu 1.jpeg'
 import img2 from '../assets/menu 2.jpeg'

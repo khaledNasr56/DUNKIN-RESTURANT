@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
+import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
+
 import Home from "./Pages/Home";
 import Menu from "./Pages/Menu";
 import About from "./Pages/About";
@@ -12,6 +13,7 @@ import Apply from "./pages/Careers/Apply";
 import Corporate from "./pages/Careers/Corporate";
 import Cards from "./Pages/Cards";
 import Location from "./Pages/Location";
+
  // import Locations from "./Pages/Location";
 // import Delivery from "./Pages/Delivery";
 // import Rewards from "./pages/Reward";
@@ -21,13 +23,18 @@ import Location from "./Pages/Location";
 
 function App() {
   return (
+  
     <Router>
+
       <Navbar />
       <Routes>
+        <Route path="/SignIn" element={<SignIn />} />
+        <Route path="/Join" element={<Join />} />
+      </Routes>
+
+      <Routes>
         <Route path="/Home" element={<Home />} />
-        <Route path="/menu" element={<Menu />} />
-        <Route path="/join" element={<Join />} />
-        <Route path="/signin" element={<SignIn />} />
+        <Route path="/Menu" element={<Menu />} />
         <Route path="/About" element={<About/>}/> 
         <Route path="/Contact" element={<Contact/>} />
         <Route path="/Cards" element={<Cards/>} />
@@ -41,7 +48,10 @@ function App() {
         <Route path="/careers/corporate" element={<Corporate />} />
       </Routes>
       <Footer/>
+
     </Router>
+
+    
   );
 }
 

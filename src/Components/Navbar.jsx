@@ -81,7 +81,7 @@ const Navbar = () => {
               isActive("/join") ? "bg-blue-800 text-white" : "bg-blue-700 hover:bg-blue-800 text-white"
             }`}
           >
-            JOIN REWARDS
+            JOIN US
           </Link>
 
           {/* SIGN IN Button */}
@@ -143,7 +143,7 @@ const Navbar = () => {
         {/* Center Logo */}
         <div className="flex-1 flex justify-center md:flex-none">
           <Link
-            to="/"
+            to="/Home"
             className={`text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight transition-colors duration-200 ${
               isActive("/") || isActive("/Home") ? "text-pink-700" : "text-orange-500 hover:text-pink-700"
             }`}

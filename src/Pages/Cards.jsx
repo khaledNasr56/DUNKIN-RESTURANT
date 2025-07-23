@@ -1,8 +1,11 @@
-import React from 'react'
+import ProductSlider from './ProductSlider'
 
 const Cards = () => {
   return (
-    <div>Cards</div>
+    <div>
+      <ProductSlider/>
+    </div>
+
   )
 }
 
