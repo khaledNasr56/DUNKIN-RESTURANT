@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import Home from "./Pages/Home";
@@ -13,29 +13,26 @@ import Corporate from "./Pages/Careers/Corporate";
 import Cards from "./Pages/Cards";
 import Location from "./Pages/Location";
 
-// import Locations from "./Pages/Location";
-// import Delivery from "./Pages/Delivery";
-// import Rewards from "./pages/Reward";
-// import Card from "./Pages/Card";
-// import Shop from "./Pages/Shop";
-
 function App() {
   return (
     <Router>
       <Navbar />
       <Routes>
-        <Route path="/SignIn" element={<SignIn />} />
-        <Route path="/Join" element={<Join />} />
-      </Routes>
-
-      <Routes>
-        <Route path="/Home" element={<Home />} />
-        <Route path="/Menu" element={<Menu />} />
-        <Route path="/About" element={<About />} />
-        <Route path="/Contact" element={<Contact />} />
-        <Route path="/Cards" element={<Cards />} />
-        <Route path="/Location" element={<Location />} />
-
+        {/* Default route - redirect to Home */}
+        <Route path="/" element={<Home />} />
+        
+        {/* Auth routes */}
+        <Route path="/signin" element={<SignIn />} />
+        <Route path="/join" element={<Join />} />
+        
+        {/* Main pages */}
+        <Route path="/home" element={<Home />} />
+        <Route path="/menu" element={<Menu />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/cards" element={<Cards />} />
+        <Route path="/location" element={<Location />} />
+        
         {/* Careers subroutes */}
         <Route path="/careers/working" element={<Working />} />
         <Route path="/careers/apply" element={<Apply />} />
