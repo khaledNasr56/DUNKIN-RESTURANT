@@ -2,12 +2,25 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="" href="/assets/Logo-DCe_Xx7O.png" />
+    <link rel="icon" type="" href="/dunkin-resturant-r12h/assets/Logo-DCe_Xx7O.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DUNKIN</title>
+
+       <script type="text/javascript">
+      (function(l) {
+        if (l.search[1] === '/' ) {
+          var decoded = l.search.slice(1).split('&').map(function(s) { 
+            return s.replace(/~and~/g, '&')
+          }).join('?');
+          window.history.replaceState(null, null,
+              l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        }
+      }(window.location))
+    </script>
     
-    <script type="module" crossorigin src="/assets/index-CI06uO9t.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-CbNCVvvC.css">
+    <script type="module" crossorigin src="/dunkin-resturant-r12h/assets/index-9axOlYI1.js"></script>
+    <link rel="stylesheet" crossorigin href="/dunkin-resturant-r12h/assets/index-CbNCVvvC.css">
   </head>
   <body>
     <style>
