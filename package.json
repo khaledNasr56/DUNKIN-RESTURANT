@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://khaledNasr56.github.io/DUNKIN-RESTURANT",
+  "homepage": "https://khalednasr56.github.io/DUNKIN-RESTURANT/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
