@@ -1,11 +1,8 @@
-
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react-swc'
-import tailwindcss from '@tailwindcss/vite';
+import tailwindcss from '@tailwindcss/vite'
 
-
-// https://vite.dev/config/
 export default defineConfig({
-  base: '/DUNKIN-RESTURANT/',// ✨ اسم الريبو هنا بالظبط
-  plugins: [tailwindcss(),react()],
+  base: '/DUNKIN-RESTURANT/',
+  plugins: [tailwindcss(), react()],
 })
