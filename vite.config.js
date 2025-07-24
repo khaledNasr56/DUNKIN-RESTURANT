@@ -6,6 +6,6 @@ import tailwindcss from '@tailwindcss/vite';
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/dunkin-resturant-r12h/', // ✨ اسم الريبو هنا بالظبط
+  base: '/DUNKIN-RESTURANT/',// ✨ اسم الريبو هنا بالظبط
   plugins: [tailwindcss(),react()],
 })
